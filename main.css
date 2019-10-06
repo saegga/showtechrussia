@@ -1,0 +1,223 @@
+body{
+	background: url(fon.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/* шапка */
+
+.main_header{
+	height: 158px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.main_header .row{
+	display: flex;
+	align-items: center;
+}
+.main_header .logo{
+	max-width: 100%;
+	padding: 44px 0;
+}
+.main_header .telephone{
+	color: #fff;
+	font-weight: 900;
+	font-size: 22px;
+	margin: 0;
+}
+.main_header .telephone img{
+	margin-right: 15px;
+}
+.main_header .telephone span{
+	font-weight: 300;
+}
+.main_btn-call{
+	float: right;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+	background: #B7000C;
+	padding: 0 30px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.main_btn-call:hover{
+	color: #fff;
+	text-decoration: none;
+}
+/* главная область */
+.main{
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+.banner_site{
+	height: 400px;
+}
+.banner_site .banner{
+	position: relative;
+	height: 100%;
+}
+.banner_site .banner .text{
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	right: 50px;
+}
+.banner_site .banner .text:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.banner_site .banner .title{
+	font-size: 36px;
+	font-weight: 900;
+	color: #fff;
+	margin: 0;
+	padding-right: 80px;
+	text-transform: uppercase;
+	line-height: 1;
+    padding-bottom: 10px;
+}
+.banner_site .banner .title span{
+	color: #E0222E;
+}
+.banner_site .banner .descr{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+.banner_site img{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	border-radius: 10px;
+}
+
+/* подвал */
+footer{
+	padding-top: 150px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+footer a.insta i{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	background: url(footer_soc.png) no-repeat;
+	background-position: 0;
+}
+footer a.wa i{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	background: url(footer_soc.png) no-repeat;
+	background-position: -52px 0;
+}
+footer a.mail i{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	background: url(footer_soc.png) no-repeat;
+	background-position: -104px 0;
+}
+footer a{
+	display: inline-block;
+	margin-right: 25px;
+}
+footer a:nth-last-child(2){
+	margin-right: 0;
+}
+footer .copyright{
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 16px;
+	margin: 0;
+	padding-top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.main{
+		padding-top: 50px;
+	}
+	.banner_site{
+		max-height: 250px;
+	}
+	.banner_site .banner .text{
+		top: 45px;
+		left: 20px;
+	}
+	.banner_site .banner .title{
+		font-size: 22px;
+	}
+	.banner_site .banner .descr{
+		font-size: 13px;
+	}
+	footer{
+		padding-top: 100px;
+	}
+}
+@media(max-width: 767px){
+	.main_header{
+		height: 100%;
+		padding-bottom: 15px;
+	}
+	.main_header .logo{
+		padding: 25px 0;
+	}
+	.main_header .telephone{
+		text-align: center;
+	}
+	.main_header .row{
+		flex-wrap: wrap;
+	}
+	.main_header .order-1{
+		order: 1;
+	}
+	.main_header .order-2{
+		order: 2;
+	}
+	.main_header .order-3{
+		order: 3;
+	}
+	.main_btn-call{
+		float: unset;
+		display: block;
+		margin-top: 25px;
+	}
+	.main{
+		padding-top: 45px;
+	}
+	h1{
+		font-size: 22px;
+	}
+	.banner_site{
+		height: 220px;
+	}
+	.banner_site .banner .title{
+		font-size: 22px;
+		padding-right: 0;
+	}
+	.banner_site .banner .descr{
+		font-size: 13px;
+	}
+	.banner_site .banner .text{
+		top: 45px;
+		left: 25px;
+		right: 20px;
+	}
+	footer{
+		padding: 60px 15px 35px 15px;
+	}
+}
